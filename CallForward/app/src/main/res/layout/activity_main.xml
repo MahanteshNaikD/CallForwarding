@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/Base.Theme.CallForward"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/multisim_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/light_blue"
+                android:text="Select Sim Card" />
+
+
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:ems="10"
+                android:hint="Number For Forwarding"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+
+            <Button
+                android:id="@+id/buttonClick"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Proceed to Forward"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/buttonSaveNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/light_blue"
+                android:text="Save Number" />
+
+
+            <Button
+                android:id="@+id/buttonClickforDateSelect"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Add Date"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/buttonClickforTime"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Add Timer"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/buttonClickforWorker"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Add Worker"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/workCancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:text="Cancel Timer Work"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/deactivate_call_forwading"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/light_blue"
+                android:text="Deactivate Call Forwarding" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylecViewForNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/light_blue"
+        android:orientation="vertical"
+
+        android:visibility="visible">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
